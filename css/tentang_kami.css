@@ -1,0 +1,12 @@
+.container-logo {
+  padding-inline: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_kiri {
+  width: 8rem;
+}
+.logo_kanan {
+  width: 8rem;
+}
