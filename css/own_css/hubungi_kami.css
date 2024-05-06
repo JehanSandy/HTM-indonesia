@@ -1,0 +1,20 @@
+.cart_hubungi {
+  box-shadow: 2px 2px 5px rgba(229, 77, 77, 0.3);
+}
+
+.hubungi_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.cart_hubungi {
+  min-width: 18rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.cart_hubungi h3 {
+  font-size: 2rem;
+}
+.icon {
+  color: red;
+}
