@@ -10,3 +10,85 @@
 .logo_kanan {
   width: 8rem;
 }
+
+/* 
+-----------
+footer css
+-----------
+*/
+.container_footer {
+  display: flex;
+  padding-inline: 10rem;
+  gap: 2rem;
+}
+
+.footer_kiri {
+  flex-basis: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header_footer {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: start;
+  height: 8rem;
+}
+.footer_kiri img {
+  width: 8rem;
+}
+.navfooter {
+  /* background-color: rgb(255, 60, 0); */
+  display: flex;
+  flex-direction: column;
+}
+.navfooter a {
+  text-decoration: none;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  width: fit-content;
+}
+.navfooter a:hover {
+  color: red;
+}
+.footer_tengah {
+  flex-basis: 32%;
+}
+.header_footer_tengah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+.footer_kanan {
+  flex-basis: 34%;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.footer_kanan p {
+  width: 20rem;
+}
+.footer_social_footer {
+  display: flex;
+  justify-content: end;
+}
+.footer_social_footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222831;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0 2.5px;
+  font-size: 18px;
+}
+.footer_social_footer a:hover {
+  color: red;
+}
