@@ -1,0 +1,42 @@
+.container_karir {
+  display: flex;
+  margin-inline: 10rem;
+  gap: 2rem;
+  margin-block: 5rem;
+}
+.deskripsi_karir {
+  flex-basis: 50%;
+}
+.deskripsi_karir h2 {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.deskripsi_karir p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.btn_karir button {
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 45px;
+  transition: all 0.3s;
+  border: none;
+}
+.btn_karir button:hover {
+  background-color: rgb(186, 8, 8);
+}
+.img_karir {
+  flex-basis: 50%;
+}
+.img_karir img {
+  width: 25rem;
+  border-radius: 0.7rem;
+}
