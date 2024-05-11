@@ -1,0 +1,64 @@
+.hero_jaringan {
+  background-image: url("../../images/jaringan_htm/hero_jaringan_htm.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.deskripsi_jaringan {
+  width: 40%;
+  margin-left: 5rem;
+  color: white;
+  /* background-color: aquamarine; */
+}
+.deskripsi_jaringan h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.deskripsi_jaringan p {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.cont_cart_jaringan {
+  /* padding-inline: 5rem; */
+  padding-block: 5rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  /* background-color: antiquewhite; */
+  gap: 2rem;
+}
+.cart_jaringan {
+  width: 25rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+.cart_jaringan img {
+  width: 100%;
+}
+.cart_des_jaringan {
+  padding-inline: 0.5rem;
+  padding-block: 1rem;
+}
+
+.cart_des_jaringan h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cart_des_jaringan h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cart_des_jaringan p {
+  margin-bottom: 0rem;
+}
+.map_jaringan {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+}
