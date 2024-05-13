@@ -1,3 +1,8 @@
+/* 
+-------------------
+header / navbar css
+-------------------
+*/
 .container-logo {
   padding-inline: 15rem;
   display: flex;
@@ -91,4 +96,211 @@ footer css
 }
 .footer_social_footer a:hover {
   color: red;
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+  /* 
+  ------------------
+  header / navbar 
+  ------------------
+  */
+  .container-logo {
+    padding-inline: 10rem;
+  }
+  /* 
+  -------
+  footers
+  ------- 
+  */
+  .container_footer {
+    /* flex-direction: column; */
+    padding-inline: 5rem;
+  }
+
+  .footer_kanan {
+    text-align: end;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  /* 
+  ------------------
+  header / navbar 
+  ------------------
+  */
+  .container-logo {
+    padding-inline: 10rem;
+  }
+  /* 
+  -------
+  footers
+  ------- 
+  */
+  .container_footer {
+    /* flex-direction: column; */
+    padding-inline: 3rem;
+  }
+
+  .footer_kanan {
+    text-align: end;
+  }
+  .footer_kanan p {
+    width: fit-content;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* 
+  ------------------
+  header / navbar 
+  ------------------
+  */
+  .container-logo {
+    padding-inline: 8rem;
+  }
+  /* 
+  -------
+  footers
+  ------- 
+  */
+  .container_footer {
+    /* flex-direction: column; */
+    padding-inline: 1.5rem;
+  }
+
+  .footer_kanan {
+    text-align: end;
+  }
+  .footer_kanan p {
+    width: fit-content;
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 
+  ------------------
+  header / navbar 
+  ------------------
+  */
+  .container-logo {
+    padding-inline: 1.5rem;
+  }
+  .logo_kanan {
+    width: 5rem;
+    height: auto;
+  }
+  .logo_kiri {
+    width: 5rem;
+    height: auto;
+  }
+  /* 
+  -------
+  footers
+  ------- 
+  */
+  .container_footer {
+    /* flex-direction: column; */
+    padding-inline: 1.5rem;
+  }
+
+  .footer_kanan {
+    text-align: end;
+  }
+  .footer_kanan p {
+    width: fit-content;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  /* 
+  ------------------
+  header / navbar 
+  ------------------
+  */
+  .container-logo {
+    padding-inline: 2rem;
+  }
+  .logo_kanan {
+    width: 5rem;
+    height: auto;
+  }
+  .logo_kiri {
+    width: 5rem;
+    height: auto;
+  }
+  /* 
+  -------
+  footers
+  ------- 
+  */
+  .container_footer {
+    flex-direction: column;
+    padding-inline: 1.5rem;
+  }
+  .footer_kiri {
+    justify-content: center;
+    align-items: center;
+  }
+  .navfooter a {
+    text-decoration: none;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+  }
+  .footer_kanan {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer_kanan p {
+    width: fit-content;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  /* 
+  ------------------
+  header / navbar 
+  ------------------
+  */
+  .container-logo {
+    padding-inline: 1rem;
+  }
+  .logo_kanan {
+    width: 4rem;
+    height: auto;
+  }
+  .logo_kiri {
+    width: 4rem;
+    height: auto;
+  }
+  /* 
+  -------
+  footers
+  ------- 
+  */
+  .container_footer {
+    flex-direction: column;
+    padding-inline: 1rem;
+  }
+  .footer_kiri {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_kiri .navfooter a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+  }
+  .footer_kanan {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer_kanan p {
+    width: fit-content;
+  }
 }

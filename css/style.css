@@ -345,7 +345,7 @@ a:focus {
   position: relative;
   transition: all 0.1 0.5s;
   border-radius: 100%;
-  border: 5px solid #ffbe33;
+  border: 5px solid red;
   overflow: hidden;
 }
 .offer_section .box .img-box img {
@@ -353,12 +353,12 @@ a:focus {
   transition: all 0.2s;
 }
 .offer_section .box .detail-box h5 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Open Sans", cursive;
   font-size: 24px;
   margin: 0;
 }
 .offer_section .box .detail-box h6 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Open Sans", cursive;
   margin: 10px 0;
 }
 .offer_section .box .detail-box h6 span {
@@ -367,15 +367,14 @@ a:focus {
 }
 .offer_section .box .detail-box a {
   display: inline-block;
-  padding: 10px 30px;
-  background-color: #ffbe33;
+  padding: 5px;
+  background-color: transparent;
   color: #ffffff;
-  border-radius: 45px;
   transition: all 0.3s;
   border: none;
 }
 .offer_section .box .detail-box a:hover {
-  background-color: #e69c00;
+  background-color: red;
 }
 .offer_section .box .detail-box a svg {
   width: 20px;
@@ -386,7 +385,10 @@ a:focus {
 .offer_section .box:hover .img-box img {
   transform: scale(1.1);
 }
-
+.food_section {
+  /* background-color: red; */
+  padding-block: 3rem;
+}
 .food_section .filters_menu {
   padding: 0;
   display: flex;
@@ -483,6 +485,7 @@ a:focus {
 .about_section {
   background: #222831;
   color: #ffffff;
+  padding-block: 10rem;
 }
 .about_section .row {
   align-items: center;
@@ -494,7 +497,7 @@ a:focus {
 }
 .about_section .img-box img {
   width: 100%;
-  max-width: 445px;
+  max-width: 600px;
   position: relative;
   z-index: 2;
 }
@@ -512,7 +515,7 @@ a:focus {
   margin-top: 15px;
 }
 .about_section .detail-box a:hover {
-  background-color: #e69c00;
+  background-color: rgb(182, 28, 28);
 }
 
 .book_section {

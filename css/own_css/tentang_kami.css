@@ -1,16 +1,3 @@
-.container-logo {
-  padding-inline: 15rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo_kiri {
-  width: 8rem;
-}
-.logo_kanan {
-  width: 8rem;
-}
-
 .container_visi {
   padding-inline: 20rem;
   padding-block: 5rem;
@@ -19,9 +6,11 @@
 }
 .container_visi div:nth-child(1) {
   flex-basis: 50%;
+  /* background-color: black; */
 }
 .container_visi div:nth-child(2) {
   flex-basis: 50%;
+  /* background-color: blue; */
 }
 .container_visi img {
   width: 18rem;
@@ -29,15 +18,17 @@
 .riset_pict {
   background-image: url("../../images/htm/riset_penelitian.jpg");
   width: 100vw;
-  height: 25rem;
+  /* height: 25rem; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-inline: 20rem;
+  padding-block: 3rem;
 }
 .riset_pict h2 {
   position: relative;
@@ -68,4 +59,123 @@
   text-align: center;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .container_visi {
+    padding-inline: 10rem;
+  }
+  .riset_pict {
+    padding-inline: 10rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container_visi {
+    /* flex-direction: column-reverse; */
+    padding-inline: 4rem;
+    gap: 2rem;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    align-items: center;
+  }
+  .container_visi div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_visi img {
+    width: 16rem;
+  }
+  .riset_pict {
+    padding-inline: 4rem;
+  }
+  .riset_pict h2 {
+    font-size: 1.5rem;
+  }
+  .riset_pict h3,
+  .riset_pict h3 span {
+    font-size: 1rem;
+  }
+  .riset_pict p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container_visi {
+    /* flex-direction: column-reverse; */
+    padding-inline: 3rem;
+    gap: 2rem;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    align-items: center;
+  }
+
+  .container_visi img {
+    width: 16rem;
+  }
+  .riset_pict {
+    padding-inline: 1rem;
+  }
+  .riset_pict h2 {
+    font-size: 1.5rem;
+  }
+  .riset_pict h3,
+  .riset_pict h3 span {
+    font-size: 1rem;
+  }
+  .riset_pict p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container_visi {
+    flex-direction: column-reverse;
+    padding-inline: 3rem;
+    gap: 2rem;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    align-items: center;
+  }
+  .container_visi img {
+    width: 16rem;
+  }
+  .riset_pict {
+    padding-inline: 1rem;
+  }
+  .riset_pict h2 {
+    font-size: 1.5rem;
+  }
+  .riset_pict h3,
+  .riset_pict h3 span {
+    font-size: 1rem;
+  }
+  .riset_pict p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .container_visi {
+    flex-direction: column-reverse;
+    padding-inline: 1rem;
+    gap: 2rem;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+    align-items: center;
+  }
+  .container_visi img {
+    width: 15rem;
+  }
+  .riset_pict {
+    padding-inline: 1rem;
+  }
+  .riset_pict h2 {
+    font-size: 1.5rem;
+  }
+  .riset_pict h3,
+  .riset_pict h3 span {
+    font-size: 1rem;
+  }
+  .riset_pict p {
+    font-size: 0.8rem;
+  }
 }
