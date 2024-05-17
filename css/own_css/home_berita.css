@@ -5,27 +5,12 @@
   align-items: center;
 }
 .container_home_berita {
-  margin-inline: 5rem;
-  padding-bottom: 5rem;
-}
-
-.container_home_berita .owl-carousel .owl-nav {
+  padding-inline: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
   display: flex;
   justify-content: center;
-  margin-top: 45px;
-  padding: 0 15px;
-}
-.container_home_berita .owl-carousel .owl-nav .owl-prev,
-.container_home_berita .owl-carousel .owl-nav .owl-next {
-  width: 45px;
-  height: 45px;
-  background-color: red;
-  color: #ffffff;
-  outline: none;
-  bottom: 0px;
-  font-size: 24px;
-  margin: 0 5px;
-  border-radius: 100%;
+  gap: 3rem;
 }
 
 .header_home_berita h2 {
@@ -36,8 +21,10 @@
 }
 
 .header_home_berita h3 {
-  font-size: 3.5rem;
-  color: #222831;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .cart_berita {
@@ -58,14 +45,30 @@
   font-weight: 500;
   color: #222831;
 }
+
 .des_berita h2 {
+  position: relative;
+  margin-bottom: 0;
   font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .des_berita a {
   text-decoration: none;
   color: red;
   font-weight: 600;
+}
+.btn-box-berita {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.btn-box-berita a {
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 45px;
+  transition: all 0.3s;
+  border: none;
 }
