@@ -34,17 +34,18 @@
 .berita_baru div {
   display: flex;
   gap: 1rem;
+  background-color: aqua;
 }
 .berita_baru div img {
   width: 5rem;
   height: 5rem;
   border-radius: 1rem;
 }
-.des_berita_baru {
+.des_berita_new {
   display: flex;
   flex-direction: column;
 }
-.berita_baru div h3 {
+.berita_baru .des_berita_new h3 {
   font-size: 1.2rem;
   font-weight: 600;
 }
