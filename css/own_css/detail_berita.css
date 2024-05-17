@@ -1,0 +1,50 @@
+.cont-berita {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 15rem;
+  padding-block: 5rem;
+  gap: 2rem;
+}
+
+.cont-des-berita {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2rem;
+}
+
+.cont-des-berita div:nth-child(1) {
+  flex-basis: 75%;
+}
+.redaksi_berita {
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.cont-des-berita div:nth-child(2) {
+  flex-basis: 25%;
+  border-radius: 1rem;
+}
+.berita_baru {
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 100%;
+}
+.berita_baru div {
+  display: flex;
+  gap: 1rem;
+}
+.berita_baru div img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+.des_berita_baru {
+  display: flex;
+  flex-direction: column;
+}
+.berita_baru div h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
