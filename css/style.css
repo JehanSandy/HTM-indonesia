@@ -120,6 +120,10 @@ a:focus {
 .header_section {
   padding: 1px 0;
   background-color: red;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 .header_section .container-fluid {
   padding-right: 25px;
@@ -788,4 +792,18 @@ a:focus {
 .toko_online {
   width: 5rem;
   margin-top: 1rem;
+}
+
+/* 
+-------------------------------
+tambahan jehan cart produk icon
+-------------------------------
+*/
+.ops_edit {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ops_edit a img {
+  width: 1.4rem;
 }
