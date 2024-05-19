@@ -1,7 +1,13 @@
 @media (max-width: 1300px) {
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 1120px) {
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 992px) {

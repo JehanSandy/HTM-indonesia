@@ -44,6 +44,7 @@
     <!-- styling custom HTM -->
     <link rel="stylesheet" href="css/own_css/header_footer.css" />
     <link rel="stylesheet" href="css/own_css/detail_berita.css" />
+    <link rel="stylesheet" href="css/own_css/home_berita.css" />
 
     <!-- bootsrap_jehan -->
     <link
@@ -105,10 +106,29 @@
               <li class="nav-item">
                 <a class="nav-link" href="Produk.html">Sparepart</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="hubungi_kami.html"
-                  >Hubungi Kami <span class="sr-only">(current)</span></a
+              <li class="nav-item dropdown active">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Hubungi Kami
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="kontak_kami.html"
+                      >Kontak Kami</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="kemitraan.html">Kemitraan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="berita.html">Berita</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="karir.html">Karir</a>
@@ -125,6 +145,12 @@
 
     <!-- detail Berita -->
     <section>
+      <div class="header_main_berita">
+        <div>
+          <p>Home / Berita / Detail Berita</p>
+          <h1>Info & Berita Terbaru</h1>
+        </div>
+      </div>
       <div class="cont-berita">
         <img src="./images/berita/test_berita.jpg" alt="tag_berita" />
         <div class="cont-des-berita">

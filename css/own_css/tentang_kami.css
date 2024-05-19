@@ -60,7 +60,14 @@
   font-weight: bold;
   margin-bottom: 0;
 }
-
+@media (min-width: 1301) and (max-width: 1400px) {
+  .container_visi {
+    padding-inline: 10rem;
+  }
+  .riset_pict {
+    padding-inline: 10rem;
+  }
+}
 @media (min-width: 1201px) and (max-width: 1300px) {
   .container_visi {
     padding-inline: 10rem;
