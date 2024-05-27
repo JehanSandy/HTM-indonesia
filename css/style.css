@@ -390,7 +390,6 @@ a:focus {
   transform: scale(1.1);
 }
 .food_section {
-  /* background-color: red; */
   padding-block: 3rem;
 }
 .food_section .filters_menu {
