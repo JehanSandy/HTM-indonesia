@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isotope and Nice Select Example</title>
+    <!-- CSS for Nice Select -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+    />
+    <!-- Inline CSS for demonstration purposes -->
+    <style>
+      .new_filters_menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+      }
+      .new_filters_menu li {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+      .new_filters_menu li.new_active {
+        background-color: #333;
+        color: #fff;
+        font-weight: bold;
+      }
+      .new_grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .new_all {
+        width: 23%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header sections -->
+
+    <!-- end header sections -->
+
+    <!-- Filters Menu -->
+    <ul class="new_filters_menu">
+      <li data-new-filter=".new_category1" class="new_active">Category 1</li>
+      <li data-new-filter=".new_category2">Category 2</li>
+      <li data-new-filter=".new_category3">Category 3</li>
+    </ul>
+
+    <!-- Grid Items -->
+    <div class="new_grid">
+      <div class="new_all new_category1">Item 1</div>
+      <div class="new_all new_category2">Item 2</div>
+      <div class="new_all new_category3">Item 3</div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- Your Custom JS -->
+    <script>
+      $(window).on("load", function () {
+        var $grid = $(".new_grid").isotope({
+          itemSelector: ".new_all",
+          filter: ".new_category1", // Set default filter to new_category1
+          percentPosition: false,
+          masonry: {
+            columnWidth: ".new_all",
+          },
+        });
+
+        $(".new_filters_menu li").click(function () {
+          $(".new_filters_menu li").removeClass("new_active");
+          $(this).addClass("new_active");
+
+          var data = $(this).attr("data-new-filter");
+          $grid.isotope({
+            filter: data,
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+
+    <!-- bawaan -->
+  </body>
+</html>

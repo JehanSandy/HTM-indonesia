@@ -1,0 +1,143 @@
+.main-detail-produk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+  padding-inline: 20rem;
+}
+
+/* 
+---------------------
+Price dan toko online
+---------------------
+*/
+.price_detail_produk {
+  display: flex;
+  width: 100%;
+  gap: 20rem;
+  padding-block: 1rem;
+}
+.detail_produk_toko_Online {
+  display: flex;
+  gap: 2rem;
+}
+.detail_produk_toko_Online img {
+  height: 4rem;
+  width: auto;
+}
+
+/* 
+------------------
+spesifikasi produk
+------------------
+*/
+.cont-des-detail {
+  padding-block: 5rem;
+  /* background-color: aqua; */
+}
+.new_filters_menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+.new_filters_menu li {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.new_filters_menu li.new_active {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+.new_grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+}
+.new_all {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.cont_item_detail h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cont_item {
+  display: flex;
+}
+.item1 {
+  flex-basis: 20%;
+}
+.item2 {
+  flex-basis: 2%;
+}
+
+/* 
+-------------------
+fitur detail produk
+-------------------
+*/
+.cont_fiturs {
+  display: flex;
+  background-color: #f0f0f0;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  gap: 2rem;
+}
+.fiturs-kanan {
+  flex-basis: 40%;
+}
+.cont-fitur-kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-fitur-kanan img {
+  width: 13rem;
+  height: auto;
+}
+.cont-fitur-kanan h3 {
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
+
+.fiturs-kiri {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-item-fitur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-item-fitur img {
+  width: 8rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.cont-item-fitur h4 {
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
