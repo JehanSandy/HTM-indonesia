@@ -107,7 +107,7 @@ fitur detail produk
 }
 
 .cont-fitur-kanan img {
-  width: 13rem;
+  width: 15rem;
   height: auto;
 }
 .cont-fitur-kanan h3 {
@@ -118,12 +118,18 @@ fitur detail produk
 .fiturs-kiri {
   flex-basis: 60%;
   display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.fiturs-kiri-2 {
+  display: flex;
   flex-wrap: wrap;
   gap: 4rem;
   justify-content: center;
   align-items: center;
 }
-
 .cont-item-fitur {
   display: flex;
   flex-direction: column;
