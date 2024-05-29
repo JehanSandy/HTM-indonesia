@@ -1,26 +1,62 @@
 .hero_jaringan {
-  background-image: url("../../images/jaringan_htm/hero_jaringan_htm.jpg");
-  height: 80vh;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
 }
-.deskripsi_jaringan {
-  width: 40%;
-  margin-left: 5rem;
-  color: white;
-  /* background-color: aquamarine; */
+.main_office_htm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 8rem;
+  padding-inline: 10rem;
 }
-.deskripsi_jaringan h2 {
+.main_office_htm img {
+  width: 40rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.main_office_htm h2 {
   font-weight: 700;
   font-size: 2rem;
 }
-.deskripsi_jaringan p {
-  font-weight: 500;
+.main_office_htm p {
+  font-weight: 200;
   font-size: 1.2rem;
 }
+.cont-alamat-pusat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+.cont-alamat-pusat h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cont-alamat-pusat p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+}
+.cont-map-pusat {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px black;
+}
+.cont-main-jaringan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .cont_cart_jaringan {
   /* padding-inline: 5rem; */
   padding-block: 5rem;
@@ -32,7 +68,7 @@
   gap: 2rem;
 }
 .cart_jaringan {
-  width: 25rem;
+  width: 20rem;
   overflow: hidden;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 5px black;
@@ -47,7 +83,7 @@
 }
 
 .cart_des_jaringan h2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 .cart_des_jaringan h3 {
@@ -55,6 +91,7 @@
   font-weight: 700;
 }
 .cart_des_jaringan p {
+  font-size: 0.8rem;
   margin-bottom: 0rem;
 }
 .map_jaringan {

@@ -44,7 +44,7 @@
     <!-- styling custom HTM -->
     <link rel="stylesheet" href="css/own_css/header_footer.css" />
     <link rel="stylesheet" href="css/own_css/jaringan_htm.css" />
-
+    <link rel="stylesheet" href="css/own_css/home_berita.css" />
     <!-- bootsrap_jehan -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -57,6 +57,60 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- 
+      =================
+      pagination jehan
+      =================    
+    -->
+    <title>Isotope and Nice Select Example</title>
+    <!-- CSS for Nice Select -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+    />
+    <!-- Inline CSS for demonstration purposes -->
+    <style>
+      .new_filters_menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .new_filters_menu li {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+      .new_filters_menu li.new_active {
+        background-color: #333;
+        color: #fff;
+        font-weight: bold;
+      }
+      .new_grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-inline: auto;
+        gap: 1rem;
+        background-color: aqua;
+        width: 100%;
+      }
+      .new_all {
+        width: fit-content;
+      }
+    </style>
+
+    <!-- 
+      =====================
+      end pagination jehan
+      =====================    
+    -->
   </head>
 
   <body class="sub_page">
@@ -64,94 +118,439 @@
       <img class="logo_kiri" src="images/logo/main_htm.png" alt="HTM" />
       <img class="logo_kanan" src="images/logo/htm_ev.png" alt="HTM" />
     </div>
-    <div class="hero_area">
-     
-      <!-- header section strats -->
-      <header class="header_section">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html"> <span>Home</span> </a>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class=""> </span>
-            </button>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html"> <span>Home</span> </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="tentang_kami.html"
-                    >Tentang Kami <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Produk.html">Produk</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Produk.html">After sales</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Produk.html">Sparepart </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Hubungi Kami
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="kontak_kami.html"
-                        >Kontak Kami</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="kemitraan.html"
-                        >Kemitraan</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="berita.html">Berita</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="karir.html">Karir</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="jaringan_htm.html">Jaringan HTM</a>
-                </li>
-              </ul>
-           
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- end header section -->
-    </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""> </span>
+          </button>
 
-    <!-- jaringan HTM sections -->
-    <div class="hero_jaringan">
-      <div class="deskripsi_jaringan">
-        <h2>Jaringan HTM Indoensia</h2>
-        <p>
-          Jaringan kami yang luas mencakup sebagian bersar Indonesia merupakan
-          bukti komitment kami memberikan pelayanan serta mempermudah pelanggan
-          kami untuk mendapatkan sevice dan produk yang berkualitas.
-        </p>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="tentang_kami.html"
+                  >Tentang Kami <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Produk.html">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Produk.html">After sales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Produk.html">Sparepart </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hubungi Kami
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="kontak_kami.html"
+                      >Kontak Kami</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="kemitraan.html">Kemitraan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="berita.html">Berita</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="karir.html">Karir</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="jaringan_htm.html">Jaringan HTM</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <div class="header_main_berita">
+      <div>
+        <p>Home / Jaringan HTM Motor Internasional</p>
+        <h1>Kantor Cabang Seluruh Indonesia</h1>
       </div>
     </div>
+    <!-- jaringan HTM sections -->
+    <div class="hero_jaringan">
+      <div class="main_office_htm">
+        <img src="/images/dummy_map.jpg" alt="" />
+        <div class="des_main_office">
+          <h2>Jaringan HTM Internasional</h2>
+          <p>
+            Jaringan luas kami yang mencakup sebagian besar Indonesia adalah
+            bukti nyata dari komitmen kami dalam memberikan pelayanan terbaik
+            kepada pelanggan. Dengan jaringan ini, kami memastikan bahwa
+            kebutuhan Anda terpenuhi dengan cepat dan efisien di mana pun Anda
+            berada.
+          </p>
+          <p>
+            Kami bertekad untuk mempermudah pelanggan dalam mendapatkan produk
+            berkualitas tinggi dan layanan yang andal. Dedikasi kami adalah
+            untuk memastikan bahwa setiap pelanggan merasakan kemudahan dan
+            kepuasan maksimal dalam setiap transaksi dan interaksi dengan kami.
+          </p>
+        </div>
+      </div>
+      <div class="cont-alamat-pusat">
+        <p>Alamat Kantor Pusat Jakarta</p>
+        <h2>PT Asean Motor Internasional</h2>
+        <div class="cont-map-pusat">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
+            width="1000"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            title="map_sukabumi"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <section class="cont-main-jaringan">
+      <div class="food_section layout_padding-bottom">
+        <div class="container">
+          <div class="heading_container heading_center">
+            <p>PT Asean Motor Internasional</p>
+            <h2>Jaringan Seluruh Indonesia</h2>
+          </div>
+        </div>
+        <!-- Filters Menu -->
+        <ul class="new_filters_menu">
+          <li data-new-filter=".Jabodetabek_banten" class="new_active">
+            JABODETABEK & BANTEN
+          </li>
+          <li data-new-filter=".Jawa_barat">Jawa Barat</li>
+          <li data-new-filter=".Jawa_timur">Jawa Timur</li>
+          <li data-new-filter=".Sumatra1">Sumatra 1</li>
+          <li data-new-filter=".Sumatra2">Sumatra 2</li>
+          <li data-new-filter=".Kalimantan">Category 3</li>
+          <li data-new-filter=".Sulawesi_nusa">Sulawsi & Nusa Tenggara</li>
+        </ul>
+
+        <!-- Grid Items -->
+        <div class="new_grid">
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jabodetabek_banten">
+            <div class="cart_jaringan">
+              <img
+                src="images/jaringan_htm/d_sukabumi.jpg"
+                alt="dealer_sukabumi"
+              />
+              <div class="cart_des_jaringan">
+                <h2>ASEAN MOTOR Sukabumi</h2>
+                <h3>AMI Sub. SUKABUMI</h3>
+
+                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+                <p>Kota Sukabumi</p>
+              </div>
+              <div class="map_jaringan">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+                  width="500"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  title="map_sukabumi"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="new_all Jawa_barat">Item 2</div>
+          <div class="new_all Jawa_timur">Item 3</div>
+          <div class="new_all Sumatra1">Item 4</div>
+          <div class="new_all Sumatra2">Item 5</div>
+          <div class="new_all Kalimantan">Item 6</div>
+          <div class="new_all Sulawesi_nusa">Item 7</div>
+        </div>
+
+        <!-- 
+      =================
+      pagination jehan
+      =================    
+    -->
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Isotope JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+        <!-- Nice Select JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+        <!-- Your Custom JS -->
+        <script>
+          $(window).on("load", function () {
+            var $grid = $(".new_grid").isotope({
+              itemSelector: ".new_all",
+              filter: ".Jabodetabek_banten", // Set default filter to new_category1
+              percentPosition: false,
+              masonry: {
+                columnWidth: ".new_all",
+              },
+            });
+
+            $(".new_filters_menu li").click(function () {
+              $(".new_filters_menu li").removeClass("new_active");
+              $(this).addClass("new_active");
+
+              var data = $(this).attr("data-new-filter");
+              $grid.isotope({
+                filter: data,
+              });
+            });
+          });
+
+          $(document).ready(function () {
+            $("select").niceSelect();
+          });
+        </script>
+        <!-- 
+        ====================
+        end pagination jehan
+        ====================    
+      --></div>
+    </section>
     <section>
       <div class="cont_cart_jaringan">
         <div class="cart_jaringan">
@@ -160,9 +559,7 @@
             <h2>ASEAN MOTOR Jakarta Pusat</h2>
             <h3>AMI Pusat</h3>
 
-            <p>
-              Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.
-            </p>
+            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
             <p>Jakarta Pusat</p>
           </div>
           <div class="map_jaringan">
@@ -175,7 +572,7 @@
               title="map_sukabumi"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></src=>
+            ></iframe>
           </div>
         </div>
         <div class="cart_jaringan">
