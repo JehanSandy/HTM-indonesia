@@ -25,82 +25,88 @@ footer css
 */
 .container_footer {
   display: flex;
-  padding-inline: 10rem;
-  gap: 2rem;
-}
-
-.footer_kiri {
-  flex-basis: 34%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-.header_footer {
+  align-items: center;
+  flex-direction: column;
   /* background-color: aqua; */
+  margin-inline: 20rem;
+}
+.cont-item-atas {
   display: flex;
-  align-items: start;
-  height: 8rem;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-.footer_kiri img {
-  width: 8rem;
-}
-.navfooter {
-  /* background-color: rgb(255, 60, 0); */
+.cont-cart-footer {
   display: flex;
   flex-direction: column;
-}
-.navfooter a {
-  text-decoration: none;
+  gap: 0.5rem;
   text-align: start;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  width: fit-content;
+  /* background-color: aqua; */
 }
-.navfooter a:hover {
-  color: red;
+.cont-cart-footer h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
-.footer_tengah {
-  flex-basis: 32%;
-}
-.header_footer_tengah {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8rem;
-}
-.footer_kanan {
-  flex-basis: 34%;
-  text-align: end;
+.a_footer {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  gap: 0.5rem;
+  align-items: start;
 }
-.footer_kanan p {
-  width: 20rem;
-}
-.footer_social_footer {
-  display: flex;
-  justify-content: end;
-}
-.footer_social_footer a {
-  display: flex;
+.a_footer a {
   text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  color: #222831;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  border-radius: 100%;
-  margin: 0 2.5px;
-  font-size: 18px;
+  color: white;
+  font-weight: 400;
 }
-.footer_social_footer a:hover {
+.a_footer a:hover {
   color: red;
+}
+.cont-item-bawah {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.img_footer {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+.img_footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.img_footer a:hover {
+  color: red;
+}
+.img2 {
+  height: 5rem;
+  width: auto;
 }
 
+.call-center-footer {
+  display: flex;
+}
+.call-center-footer p {
+  margin-bottom: 0rem;
+}
+.c1 {
+  flex-basis: 50%;
+}
+.c2 {
+  flex-basis: 2%;
+  padding-inline: 1rem;
+}
+.c3 {
+  flex-basis: 48%;
+}
 @media (min-width: 1301px) and (max-width: 1400px) {
   /* 
   ------------------
