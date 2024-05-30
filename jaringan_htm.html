@@ -63,22 +63,14 @@
       pagination jehan
       =================    
     -->
-    <title>Isotope and Nice Select Example</title>
-    <!-- CSS for Nice Select -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
-    />
-    <!-- Inline CSS for demonstration purposes -->
     <style>
       .new_filters_menu {
         list-style: none;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
+        justify-content: center;
       }
       .new_filters_menu li {
         cursor: pointer;
@@ -94,23 +86,27 @@
       .new_grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding-inline: auto;
-        gap: 1rem;
-        background-color: aqua;
-        width: 100%;
       }
       .new_all {
-        width: fit-content;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
       }
     </style>
-
     <!-- 
-      =====================
+      ====================
       end pagination jehan
-      =====================    
+      ====================    
     -->
+    <title>Isotope and Nice Select Example</title>
+    <!-- CSS for Nice Select -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+    />
   </head>
 
   <body class="sub_page">
@@ -145,13 +141,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Produk.html">Produk</a>
+                <a class="nav-link" href="produk_all.html">Produk</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Produk.html">After sales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Produk.html">Sparepart </a>
+                <a class="nav-link" href="sparepart.html">Sparepart </a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -233,326 +229,28 @@
         </div>
       </div>
     </div>
-    <section class="cont-main-jaringan">
-      <div class="food_section layout_padding-bottom">
-        <div class="container">
-          <div class="heading_container heading_center">
-            <p>PT Asean Motor Internasional</p>
-            <h2>Jaringan Seluruh Indonesia</h2>
-          </div>
-        </div>
-        <!-- Filters Menu -->
-        <ul class="new_filters_menu">
-          <li data-new-filter=".Jabodetabek_banten" class="new_active">
-            JABODETABEK & BANTEN
-          </li>
-          <li data-new-filter=".Jawa_barat">Jawa Barat</li>
-          <li data-new-filter=".Jawa_timur">Jawa Timur</li>
-          <li data-new-filter=".Sumatra1">Sumatra 1</li>
-          <li data-new-filter=".Sumatra2">Sumatra 2</li>
-          <li data-new-filter=".Kalimantan">Category 3</li>
-          <li data-new-filter=".Sulawesi_nusa">Sulawsi & Nusa Tenggara</li>
-        </ul>
-
-        <!-- Grid Items -->
-        <div class="new_grid">
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jabodetabek_banten">
-            <div class="cart_jaringan">
-              <img
-                src="images/jaringan_htm/d_sukabumi.jpg"
-                alt="dealer_sukabumi"
-              />
-              <div class="cart_des_jaringan">
-                <h2>ASEAN MOTOR Sukabumi</h2>
-                <h3>AMI Sub. SUKABUMI</h3>
-
-                <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-                <p>Kota Sukabumi</p>
-              </div>
-              <div class="map_jaringan">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-                  width="500"
-                  height="200"
-                  style="border: 0"
-                  allowfullscreen=""
-                  title="map_sukabumi"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="new_all Jawa_barat">Item 2</div>
-          <div class="new_all Jawa_timur">Item 3</div>
-          <div class="new_all Sumatra1">Item 4</div>
-          <div class="new_all Sumatra2">Item 5</div>
-          <div class="new_all Kalimantan">Item 6</div>
-          <div class="new_all Sulawesi_nusa">Item 7</div>
-        </div>
-
-        <!-- 
+    <!-- 
       =================
-      pagination jehan
+      pagination jaringan jehan
       =================    
     -->
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Isotope JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-        <!-- Nice Select JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-        <!-- Your Custom JS -->
-        <script>
-          $(window).on("load", function () {
-            var $grid = $(".new_grid").isotope({
-              itemSelector: ".new_all",
-              filter: ".Jabodetabek_banten", // Set default filter to new_category1
-              percentPosition: false,
-              masonry: {
-                columnWidth: ".new_all",
-              },
-            });
+    <!-- Filters Menu -->
+    <ul class="new_filters_menu">
+      <li data-new-filter=".JABODETABEK" class="new_active">
+        Jabodetabek & Banten
+      </li>
+      <li data-new-filter=".JAWA_BARAT">Jawa Barat</li>
+      <li data-new-filter=".JAWA_TENGAH">Jawa Tengah</li>
+      <li data-new-filter=".JAWA_TIMUR">Jawa Timur</li>
+      <li data-new-filter=".SUMATRA1">Sumatra 1</li>
+      <li data-new-filter=".SUMATRA2">Sumatra 2</li>
+      <li data-new-filter=".KALIMANTAN">Kalimantan</li>
+      <li data-new-filter=".SULAWESI_NUSA_T">Sulawesi & Nusa Tenggara</li>
+    </ul>
 
-            $(".new_filters_menu li").click(function () {
-              $(".new_filters_menu li").removeClass("new_active");
-              $(this).addClass("new_active");
-
-              var data = $(this).attr("data-new-filter");
-              $grid.isotope({
-                filter: data,
-              });
-            });
-          });
-
-          $(document).ready(function () {
-            $("select").niceSelect();
-          });
-        </script>
-        <!-- 
-        ====================
-        end pagination jehan
-        ====================    
-      --></div>
-    </section>
-    <section>
-      <div class="cont_cart_jaringan">
+    <!-- Grid Items -->
+    <div class="new_grid">
+      <div class="new_all JABODETABEK">
         <div class="cart_jaringan">
           <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
           <div class="cart_des_jaringan">
@@ -578,15 +276,15 @@
         <div class="cart_jaringan">
           <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
           <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
+            <h2>ASEAN MOTOR Jakarta Pusat</h2>
+            <h3>AMI Pusat</h3>
 
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
+            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
+            <p>Jakarta Pusat</p>
           </div>
           <div class="map_jaringan">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
               width="500"
               height="200"
               style="border: 0"
@@ -600,15 +298,15 @@
         <div class="cart_jaringan">
           <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
           <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
+            <h2>ASEAN MOTOR Jakarta Pusat</h2>
+            <h3>AMI Pusat</h3>
 
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
+            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
+            <p>Jakarta Pusat</p>
           </div>
           <div class="map_jaringan">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
               width="500"
               height="200"
               style="border: 0"
@@ -622,15 +320,15 @@
         <div class="cart_jaringan">
           <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
           <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
+            <h2>ASEAN MOTOR Jakarta Pusat</h2>
+            <h3>AMI Pusat</h3>
 
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
+            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
+            <p>Jakarta Pusat</p>
           </div>
           <div class="map_jaringan">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
               width="500"
               height="200"
               style="border: 0"
@@ -644,15 +342,15 @@
         <div class="cart_jaringan">
           <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
           <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
+            <h2>ASEAN MOTOR Jakarta Pusat</h2>
+            <h3>AMI Pusat</h3>
 
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
+            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
+            <p>Jakarta Pusat</p>
           </div>
           <div class="map_jaringan">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
               width="500"
               height="200"
               style="border: 0"
@@ -663,116 +361,8 @@
             ></iframe>
           </div>
         </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
-
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
-
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
-
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
-
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Sukabumi</h2>
-            <h3>AMI Sub. SUKABUMI</h3>
-
-            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
-            <p>Kota Sukabumi</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
+      </div>
+      <div class="new_all JAWA_BARAT">
         <div class="cart_jaringan">
           <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
           <div class="cart_des_jaringan">
@@ -884,7 +474,718 @@
           </div>
         </div>
       </div>
-    </section>
+      <div class="new_all JAWA_TENGAH">
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="new_all JAWA_TIMUR">
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="new_all SUMATRA1">
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="new_all SUMATRA2">
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="new_all KALIMANTAN">
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="new_all SULAWESI_NUSA_T">
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="cart_jaringan">
+          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
+          <div class="cart_des_jaringan">
+            <h2>ASEAN MOTOR Sukabumi</h2>
+            <h3>AMI Sub. SUKABUMI</h3>
+
+            <p>jl. RA. Kosasih Blok Harempoy no. 213 Subangjaya</p>
+            <p>Kota Sukabumi</p>
+          </div>
+          <div class="map_jaringan">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.785525966623!2d106.92673457846495!3d-6.926849137930008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e684948e50f000f%3A0x45567ec0dd054b91!2sPT.%20ASEAN%20MOTOR%20INTERNATIONAL!5e0!3m2!1sid!2sid!4v1715244262981!5m2!1sid!2sid"
+              width="500"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              title="map_sukabumi"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- Your Custom JS -->
+    <script>
+      $(window).on("load", function () {
+        var $grid = $(".new_grid").isotope({
+          itemSelector: ".new_all",
+          filter: ".JABODETABEK", // Set default filter to new_category1
+          percentPosition: false,
+          masonry: {
+            columnWidth: ".new_all",
+          },
+        });
+
+        $(".new_filters_menu li").click(function () {
+          $(".new_filters_menu li").removeClass("new_active");
+          $(this).addClass("new_active");
+
+          var data = $(this).attr("data-new-filter");
+          $grid.isotope({
+            filter: data,
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
+    <!-- 
+      =================
+      end pagination jaringan jehan
+      =================    
+    -->
 
     <!-- footer section -->
     <footer class="footer_section">
