@@ -1,0 +1,68 @@
+.des_kemitraan {
+  padding-inline: 30rem;
+  padding-block: 10rem;
+}
+.des_kemitraan h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.des_kemitraan p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.middle_kemitraan {
+  display: flex;
+}
+.img_middle_kemitraan {
+  background-image: url(/images/htm/kemitraan_middle.jpg);
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 50%;
+  padding-block: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.img_middle_kemitraan img {
+  width: 35rem;
+}
+.title_mid_kemitraan {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-inline: 4rem;
+}
+.title_mid_kemitraan h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.title_mid_kemitraan p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.cont_keuntungan_mitra {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 10rem;
+}
+.cont_cart_keuntungan {
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cont_cart_keuntungan img {
+  width: 10rem;
+}
+.des_cart_keuntungan h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.des_cart_keuntungan p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
