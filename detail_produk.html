@@ -3,192 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Isotope and Nice Select Example</title>
-    <!-- CSS for Nice Select -->
+    <title>Product Slider</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/own_css/jaringan_htm.css" />
-    <!-- Inline CSS for demonstration purposes -->
     <style>
-      .new_filters_menu {
-        list-style: none;
-        padding: 0;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
         display: flex;
-        gap: 10px;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
       }
-      .new_filters_menu li {
-        cursor: pointer;
-        padding: 5px 10px;
-        background-color: #ddd;
-        border-radius: 5px;
+      .swiper-container {
+        width: 80%;
+        height: 400px;
       }
-      .new_filters_menu li.new_active {
-        background-color: #333;
-        color: #fff;
-        font-weight: bold;
-      }
-      .new_grid {
+      .swiper-slide {
+        background-color: #fff;
         display: flex;
-        flex-wrap: wrap;
-      }
-      .new_all {
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        box-sizing: border-box;
-        background-color: #f0f0f0;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
         border: 1px solid #ddd;
-        border-radius: 5px;
-        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+        /* object-fit: cover; */
+        border-bottom: 1px solid #ddd;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .swiper-slide h2 {
+        font-size: 1.5em;
+        margin-bottom: 0rem;
+      }
+      .swiper-slide p {
+        font-size: 1em;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .swiper-container {
+          width: 90%;
+          height: 350px;
+        }
+      }
+      @media (max-width: 480px) {
+        .swiper-container {
+          width: 100%;
+          height: 300px;
+        }
       }
     </style>
   </head>
   <body>
-    <!-- header sections -->
-
-    <!-- end header sections -->
-    <!-- Filters Menu -->
-    <ul class="new_filters_menu">
-      <li data-new-filter=".new_category1" class="new_active">Category 1</li>
-      <li data-new-filter=".new_category2">Category 2</li>
-      <li data-new-filter=".new_category3">Category 3</li>
-    </ul>
-
-    <!-- Grid Items -->
-    <div class="new_grid">
-      <div class="new_all new_category1">
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Jakarta Pusat</h2>
-            <h3>AMI Pusat</h3>
-
-            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
-            <p>Jakarta Pusat</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/Lampu_DRL_dan_sein_depan.jpg"
+            alt="Product 1"
+          />
+          <h2>Product 1</h2>
+          <p>This is a short description of Product 1.</p>
         </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Jakarta Pusat</h2>
-            <h3>AMI Pusat</h3>
-
-            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
-            <p>Jakarta Pusat</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/rem_depan_cakram.jpg"
+            alt="Product 2"
+          />
+          <h2>Product 2</h2>
+          <p>This is a short description of Product 2.</p>
         </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Jakarta Pusat</h2>
-            <h3>AMI Pusat</h3>
-
-            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
-            <p>Jakarta Pusat</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/indikator_baterai.jpg"
+            alt="Product 3"
+          />
+          <h2>Product 3</h2>
+          <p>This is a short description of Product 3.</p>
         </div>
-        <div class="cart_jaringan">
-          <img src="images/jaringan_htm/d_sukabumi.jpg" alt="dealer_sukabumi" />
-          <div class="cart_des_jaringan">
-            <h2>ASEAN MOTOR Jakarta Pusat</h2>
-            <h3>AMI Pusat</h3>
-
-            <p>Gedung Asean Tower Jl. KH.Samanhudi No.10, Pasar Baru.</p>
-            <p>Jakarta Pusat</p>
-          </div>
-          <div class="map_jaringan">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7679175548346!2d106.8305629758982!3d-6.161828960392073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5c3ee563bd1%3A0x8bfdc8fd1fcafc26!2sAsean%20Motor!5e0!3m2!1sid!2sid!4v1716534139015!5m2!1sid!2sid"
-              width="500"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              title="map_sukabumi"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/bagasi_bawah jok.jpg"
+            alt="Product 4"
+          />
+          <h2>Product 4</h2>
+          <p>This is a short description of Product 4.</p>
+        </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/speed_control.jpg"
+            alt="Product 5"
+          />
+          <h2>Product 5</h2>
+          <p>This is a short description of Product 5.</p>
+        </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/pijakan_kaki_penumpang.jpg"
+            alt="Product 6"
+          />
+          <h2>Product 6</h2>
+          <p>This is a short description of Product 6.</p>
+        </div>
+        <!-- Slide 7 -->
+        <div class="swiper-slide">
+          <img
+            src="/images/produk/speda_listrik/detail/Jet2/lampu_rem&sein_belakang.jpg"
+            alt="Product 7"
+          />
+          <h2>Product 7</h2>
+          <p>This is a short description of Product 7.</p>
+        </div>
+        <!-- Slide 8 -->
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/300x200" alt="Product 8" />
+          <h2>Product 8</h2>
+          <p>This is a short description of Product 8.</p>
         </div>
       </div>
-      <div class="new_all new_category2">Item 2</div>
-      <div class="new_all new_category3">Item 3</div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Isotope JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <!-- Nice Select JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-    <!-- Your Custom JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      $(window).on("load", function () {
-        var $grid = $(".new_grid").isotope({
-          itemSelector: ".new_all",
-          filter: ".new_category1", // Set default filter to new_category1
-          percentPosition: false,
-          masonry: {
-            columnWidth: ".new_all",
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
-        });
-
-        $(".new_filters_menu li").click(function () {
-          $(".new_filters_menu li").removeClass("new_active");
-          $(this).addClass("new_active");
-
-          var data = $(this).attr("data-new-filter");
-          $grid.isotope({
-            filter: data,
-          });
-        });
-      });
-
-      $(document).ready(function () {
-        $("select").niceSelect();
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
       });
     </script>
-
-    <!-- bawaan -->
   </body>
 </html>
