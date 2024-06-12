@@ -147,3 +147,53 @@ fitur detail produk
   font-size: 1.3rem;
   font-weight: 700;
 }
+
+/* 
+--------------
+fitur baru
+--------------
+*/
+.body_fitur {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 8rem;
+  margin: 0;
+}
+.swiper-container {
+  width: 80%;
+  height: 400px;
+}
+.swiper-slide {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(53, 52, 52, 0.1);
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.swiper-slide h2 {
+  font-size: 1.5em;
+  margin-block: 1rem;
+}
+.swiper-slide p {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .swiper-container {
+    width: 90%;
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+  }
+}
