@@ -1,3 +1,8 @@
+:root {
+  --merah: #e00d0d;
+  --onHover: #962525;
+  --gelap: #222831;
+}
 .header_home_berita {
   display: flex;
   flex-direction: column;
@@ -7,7 +12,6 @@
 .header_home_berita h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: red;
   margin-bottom: 0rem;
 }
 
@@ -30,7 +34,7 @@
   width: 23rem;
   overflow: hidden;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 5px rgba(229, 77, 77, 0.3);
+  box-shadow: 0 0 5px 5px rgba(53, 52, 52, 0.1);
 }
 .cart_berita img {
   width: 100%;
@@ -54,8 +58,11 @@
 
 .des_berita a {
   text-decoration: none;
-  color: red;
+  color: var(--merah);
   font-weight: 600;
+}
+.des_berita a:hover {
+  color: var(--onHover);
 }
 .btn-box-berita {
   display: flex;
@@ -65,11 +72,66 @@
 .btn-box-berita a {
   display: inline-block;
   padding: 10px 55px;
-  background-color: red;
+  background-color: var(--merah);
   color: #ffffff;
   border-radius: 45px;
   transition: all 0.3s;
   border: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-box-berita a:hover {
+  background-color: var(--onHover);
+}
+/* 
+---------------------------------
+Sosial Media dan marketplace home
+---------------------------------
+*/
+.sosial_market {
+  background-image: url(/images/htm/home_sosial_media.jpg);
+  background-size: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  padding-block: 11rem;
+  padding-inline: 5rem;
+}
+.cont-cart-SM {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  /* width: 300px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+}
+.cont-cart-SM h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.cont-cart-SM .icon_home {
+  font-size: 3rem;
+  color: var(--merah);
+}
+.cont-cart-SM .icon_home:hover {
+  color: var(--onHover);
+}
+.cont-SM {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.toko_online {
+  width: 7rem;
+  margin-top: 1rem;
 }
 /* 
 ----------------------------
@@ -83,7 +145,7 @@ responsive berita home page
   .container_home_berita {
     padding-inline: 3rem;
     padding-block: 2rem;
-    align-items: center;
+    /* align-items: center; */
     gap: 1rem;
   }
   .cart_berita {
@@ -94,7 +156,7 @@ responsive berita home page
   .container_home_berita {
     padding-inline: 1rem;
     padding-block: 2rem;
-    align-items: center;
+    /* align-items: center; */
     gap: 1rem;
   }
   .cart_berita {
@@ -110,11 +172,30 @@ responsive berita home page
   .container_home_berita {
     padding-inline: 1rem;
     padding-block: 2rem;
-    align-items: center;
     gap: 1rem;
   }
   .cart_berita {
     height: auto;
+  }
+  /* 
+  ------------------------
+  marketplace sosial media
+  ------------------------
+  */
+  .sosial_market {
+    /* flex-direction: column; */
+    gap: 3rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .cont-cart-SM {
+    padding-inline: 2rem;
+  }
+  .cont-cart-SM .icon_home {
+    font-size: 2rem;
+  }
+  .toko_online {
+    width: 5rem;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -130,6 +211,29 @@ responsive berita home page
     flex-direction: column;
     align-items: center;
   }
+  .cart_berita {
+    width: 24rem;
+  }
+  /* 
+  ------------------------
+  marketplace sosial media
+  ------------------------
+  */
+  .sosial_market {
+    flex-direction: column;
+    gap: 3rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .cont-cart-SM {
+    padding-inline: 3rem;
+  }
+  .cont-cart-SM .icon_home {
+    font-size: 2rem;
+  }
+  .toko_online {
+    width: 5rem;
+  }
 }
 @media (min-width: 360px) and (max-width: 479px) {
   .header_home_berita h2 {
@@ -143,6 +247,29 @@ responsive berita home page
     padding-block: 2rem;
     flex-direction: column;
     align-items: center;
+  }
+  .cart_berita {
+    width: 20.5rem;
+  }
+  /* 
+  ------------------------
+  marketplace sosial media
+  ------------------------
+  */
+  .sosial_market {
+    flex-direction: column;
+    gap: 3rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .cont-cart-SM {
+    padding-inline: 2rem;
+  }
+  .cont-cart-SM .icon_home {
+    font-size: 2rem;
+  }
+  .toko_online {
+    width: 5rem;
   }
 }
 

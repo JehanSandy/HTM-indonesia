@@ -1,3 +1,8 @@
+:root {
+  --merah: #e00d0d;
+  --onHover: #962525;
+  --gelap: #222831;
+}
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
@@ -119,7 +124,7 @@ a:focus {
 
 .header_section {
   padding: 1px 0;
-  background-color: #e00d0d;
+  background-color: var(--merah);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -135,12 +140,12 @@ a:focus {
 }
 .navbar-brand span {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
   color: #ffffff;
 }
 .navbar-brand span:hover {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
   color: #222831;
 }
 
@@ -325,7 +330,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #e00d0d;
+  background-color: var(--merah);
 }
 
 .offer_section {
@@ -349,7 +354,7 @@ a:focus {
   position: relative;
   transition: all 0.1 0.5s;
   border-radius: 100%;
-  border: 5px solid #e00d0d;
+  border: 5px solid var(--merah);
   overflow: hidden;
 }
 .offer_section .box .img-box img {
@@ -378,7 +383,7 @@ a:focus {
   border: none;
 }
 .offer_section .box .detail-box a:hover {
-  color: #e00d0d;
+  color: var(--merah);
 }
 .offer_section .box .detail-box a svg {
   width: 20px;
@@ -405,6 +410,7 @@ a:focus {
   padding: 7px 25px;
   cursor: pointer;
   border-radius: 25px;
+  font-weight: 700;
 }
 .food_section .filters_menu li.active {
   background-color: #222831;
@@ -418,7 +424,7 @@ a:focus {
   color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
-  background: linear-gradient(to bottom, #f1f2f3 25px, #e00d0d 25px);
+  background: linear-gradient(to bottom, #f1f2f3 25px, var(--merah) 25px);
 }
 .food_section .box .img-box {
   background: #f1f2f3;
@@ -491,14 +497,16 @@ a:focus {
 .food_section .btn-box a {
   display: inline-block;
   padding: 10px 55px;
-  background-color: #e00d0d;
+  background-color: var(--merah);
   color: #ffffff;
   border-radius: 45px;
   transition: all 0.3s;
   border: none;
+  text-decoration: none;
+  font-weight: 500;
 }
 .food_section .btn-box a:hover {
-  background-color: rgb(182, 27, 27);
+  background-color: var(--onHover);
 }
 
 .about_section {
@@ -526,15 +534,16 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #e00d0d;
+  background-color: var(--merah);
   color: #ffffff;
   border-radius: 45px;
   transition: all 0.3s;
   border: none;
   margin-top: 15px;
+  text-decoration: none;
 }
 .about_section .detail-box a:hover {
-  background-color: rgb(182, 28, 28);
+  background-color: var(--onHover);
 }
 
 .book_section {
@@ -571,14 +580,14 @@ a:focus {
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #e00d0d;
+  background-color: var(--merah);
   color: #ffffff;
   border-radius: 45px;
   transition: all 0.3s;
   border: none;
 }
 .book_section .form_container button:hover {
-  background-color: rgb(186, 8, 8);
+  background-color: var(--onHover);
 }
 .book_section .map_container {
   width: 100%;
@@ -613,7 +622,7 @@ a:focus {
 }
 .client_section .box .img-box img {
   border-radius: 100%;
-  border: 5px solid #e00d0d;
+  border: 5px solid var(--merah);
   position: relative;
 }
 .client_section .box .img-box::before {
@@ -623,7 +632,7 @@ a:focus {
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #e00d0d;
+  background-color: var(--merah);
   transform: rotate(45deg) translateX(-50%);
 }
 .client_section .box .detail-box {
@@ -652,7 +661,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next {
   width: 45px;
   height: 45px;
-  background-color: #e00d0d;
+  background-color: var(--merah);
   color: #ffffff;
   outline: none;
   bottom: 0px;
@@ -785,14 +794,6 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 } /*# sourceMappingURL=style.css.map */
-
-.icon_home {
-  font-size: 3rem;
-}
-.toko_online {
-  width: 5rem;
-  margin-top: 1rem;
-}
 
 /* 
 -------------------------------

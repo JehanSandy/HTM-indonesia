@@ -63,8 +63,8 @@
 
   <body>
     <div class="container-logo">
-      <img class="logo_kiri" src="images/logo/main_htm.png" alt="HTM" />
-      <img class="logo_kanan" src="images/logo/htm_ev.png" alt="HTM" />
+      <img class="logo_kiri" src="images/logo/main_htm_ev.png" alt="HTM" />
+      <img class="logo_kanan" src="images/logo/PT_asean_motor.png" alt="HTM" />
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -94,8 +94,24 @@
               <li class="nav-item">
                 <a class="nav-link" href="produk_all.html">Produk</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="after_sales.html">After sales</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  After Sales
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="after_sales.html">Roda 3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="after_sales.html">HTM EV</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="sparepart.html">Sparepart </a>
@@ -586,7 +602,7 @@
           </div>
         </div>
         <div class="btn-box">
-          <a href="produk2.html"> View More </a>
+          <a href="produk_all.html"> View More </a>
         </div>
       </div>
     </section>
@@ -595,71 +611,48 @@
 
     <!-- offer section -->
 
-    <section class="offer_section layout_padding-bottom">
-      <div class="offer_container">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/htm/marketPlace.jpg" alt="" />
-                </div>
-                <div class="detail-box">
-                  <h5>Market Place</h5>
-                  <div>
-                    <a href="https://www.tokopedia.com/htmaseanmotor"
-                      ><img
-                        class="toko_online"
-                        src="./images/tokoOnline/tokped.png"
-                        alt=""
-                    /></a>
-                    <a href="https://shopee.co.id/htmaseanmotor">
-                      <img
-                        class="toko_online"
-                        src="./images/tokoOnline/shopee.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/htm/sosialMedia.jpg" alt="" />
-                </div>
-                <div class="detail-box">
-                  <h5>Sosial Media</h5>
-                  <div>
-                    <a
-                      href="https://www.instagram.com/htmaseanmotor/"
-                      class="icon_home"
-                    >
-                      <i class="fa-brands fa-instagram"></i
-                    ></a>
-                    <a
-                      href="https://www.facebook.com/htmaseanmotor?mibextid=ZbWKwL"
-                      class="icon_home"
-                    >
-                      <i class="fa-brands fa-square-facebook"></i
-                    ></a>
-                    <a
-                      href="https://www.youtube.com/channel/UCL5aIr9g54pdiEm-44tGwbg"
-                      class="icon_home"
-                    >
-                      <i class="fa-brands fa-youtube"></i
-                    ></a>
-                    <a
-                      href="https://www.tiktok.com/@htmaseanmotorofficial"
-                      class="icon_home"
-                      ><i class="fa-brands fa-tiktok"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section class="sosial_market">
+      <div class="cont-cart-SM">
+        <h2>Marketplace</h2>
+        <div class="cont-SM">
+          <a href="https://www.tokopedia.com/htmaseanmotor"
+            ><img
+              class="toko_online"
+              src="./images/tokoOnline/tokped.png"
+              alt=""
+          /></a>
+          <a href="https://shopee.co.id/htmaseanmotor">
+            <img
+              class="toko_online"
+              src="./images/tokoOnline/shopee.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="cont-cart-SM">
+        <h2>Sodial Media</h2>
+        <div class="cont-SM">
+          <a href="https://www.instagram.com/htmaseanmotor/" class="icon_home">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/htmaseanmotor?mibextid=ZbWKwL"
+            class="icon_home"
+          >
+            <i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCL5aIr9g54pdiEm-44tGwbg"
+            class="icon_home"
+          >
+            <i class="fa-brands fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@htmaseanmotorofficial"
+            class="icon_home"
+            ><i class="fa-brands fa-tiktok"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -679,12 +672,11 @@
               <div class="box">
                 <div class="detail-box">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
+                    “Saya mendengar tentang HTM dari tetangga saya. Katanya, HTM
+                    Mantap. Jadi Motor roda tiga HTM menjadi pilihan saya.”
                   </p>
-                  <h6>Moana Michell</h6>
-                  <p>magna aliqua</p>
+                  <h6>Ahui</h6>
+                  <p>Wirausahawan-Singkawang</p>
                 </div>
                 <div class="img-box">
                   <img src="images/pp1.jpg" alt="" class="box-img" />
@@ -695,12 +687,11 @@
               <div class="box">
                 <div class="detail-box">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
+                    “Motor Roda Tiga HTM Bagus, kuat menanjak dan juga hrganya
+                    Bijak”
                   </p>
-                  <h6>Mike Hamell</h6>
-                  <p>magna aliqua</p>
+                  <h6>Gani</h6>
+                  <p>Wirausahawan-Singkawang</p>
                 </div>
                 <div class="img-box">
                   <img src="images/pp2.jpg" alt="" class="box-img" />
@@ -771,7 +762,7 @@
             </div>
           </div>
           <div class="cont-cart-footer">
-            <h2>HTM CORPORATE</h2>
+            <h2>PERUSAHAAN HTM</h2>
             <div class="a_footer">
               <a href="tentang_kami.html">Tentang Kami</a>
               <a href="jaringan_htm.html">Jaringan</a>
@@ -779,7 +770,7 @@
             </div>
           </div>
           <div class="cont-cart-footer">
-            <h2>LAINNYA</h2>
+            <h2>KONTAK KAMI</h2>
             <div class="a_footer">
               <a href="kontak_kami.html">Hubungi Kami</a>
               <a href="kemitraan.html">Kemitraan</a>
@@ -788,11 +779,16 @@
           </div>
           <div class="cont-cart-footer">
             <h2>ALAMAT</h2>
-            <p>
-              <i class="fa-sharp fa-solid fa-location-dot"></i> Asean Tower,
-              <br />
-              Jl. KH. Samanhudi no 10, <br />Jakarta Pusat 10710
-            </p>
+            <div class="a_footer">
+              <a
+                href="https://maps.app.goo.gl/Whjqj6qXVhnRPML57"
+                target="_blank"
+              >
+                <i class="fa-sharp fa-solid fa-location-dot"></i> Asean Tower,
+                <br />
+                Jl. KH. Samanhudi no 10, <br />Jakarta Pusat 10710
+              </a>
+            </div>
           </div>
         </div>
         <div class="cont-item-bawah">
@@ -855,7 +851,7 @@
             </div>
           </div>
           <div class="cont-cart-footer">
-            <h2>Mamber Off</h2>
+            <h2>Member Of</h2>
             <div class="img_footer">
               <img src="/images/htm/lkpp.jpg" alt="" class="img2" />
             </div>
