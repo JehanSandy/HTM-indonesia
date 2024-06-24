@@ -1,3 +1,8 @@
+:root {
+  --merah: #e00d0d;
+  --onHover: #962525;
+  --gelap: #222831;
+}
 .container_karir {
   display: flex;
   margin-inline: 10rem;
@@ -8,17 +13,19 @@
 }
 .deskripsi_karir {
   flex-basis: 50%;
+  /* background-color: #e00d0d; */
 }
 .deskripsi_karir h2 {
-  position: relative;
   margin-bottom: 0;
   font-size: 2.5rem;
   font-weight: bold;
+  font-weight: 700;
 }
 .deskripsi_karir p {
   margin-top: 10px;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 .btn_karir button {
   margin-top: 15px;
@@ -26,14 +33,14 @@
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #b50b0b;
+  background-color: var(--merah);
   color: #ffffff;
   border-radius: 45px;
   transition: all 0.3s;
   border: none;
 }
 .btn_karir button:hover {
-  background-color: rgb(186, 8, 8);
+  background-color: var(--onHover);
 }
 .img_karir {
   flex-basis: 50%;
@@ -41,4 +48,99 @@
 .img_karir img {
   width: 50rem;
   border-radius: 0.7rem;
+}
+/* 
+----------------------------
+responsive berita home page
+----------------------------
+*/
+@media (min-width: 1301px) and (max-width: 1400px) {
+  .container_karir {
+    /* flex-direction: column; */
+    padding-inline: 3rem;
+    margin-inline: 0rem;
+    margin-block: 3rem;
+    /* background-color: aqua; */
+  }
+  .deskripsi_karir {
+    width: 100%;
+  }
+  .img_karir img {
+    width: 100%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .container_karir {
+    /* flex-direction: column; */
+    padding-inline: 3rem;
+    margin-inline: 0rem;
+    margin-block: 3rem;
+    /* background-color: aqua; */
+  }
+  .deskripsi_karir {
+    width: 100%;
+  }
+  .img_karir img {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container_karir {
+    /* flex-direction: column; */
+    padding-inline: 3rem;
+    margin-inline: 0rem;
+    margin-block: 3rem;
+    /* background-color: aqua; */
+  }
+  .deskripsi_karir {
+    width: 100%;
+  }
+  .img_karir img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container_karir {
+    flex-direction: column;
+    padding-inline: 3rem;
+    margin-inline: 0rem;
+    margin-block: 3rem;
+    /* background-color: aqua; */
+  }
+  .deskripsi_karir {
+    width: 100%;
+  }
+  .img_karir img {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container_karir {
+    flex-direction: column;
+    padding-inline: 1rem;
+    margin-inline: 0rem;
+    margin-block: 3rem;
+    /* background-color: aqua; */
+  }
+  .deskripsi_karir {
+    width: 100%;
+  }
+  .img_karir img {
+    width: 100%;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .container_karir {
+    flex-direction: column;
+    padding-inline: 1rem;
+    margin-inline: 0rem;
+    margin-block: 3rem;
+    /* background-color: aqua; */
+  }
+  .deskripsi_karir {
+    width: 100%;
+  }
+  .img_karir img {
+    width: 100%;
+  }
 }

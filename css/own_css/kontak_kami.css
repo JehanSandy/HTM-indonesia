@@ -1,3 +1,8 @@
+:root {
+  --merah: #e00d0d;
+  --onHover: #962525;
+  --gelap: #222831;
+}
 .cont-main-des-kontak {
   padding-top: 5rem;
   text-align: center;
@@ -44,11 +49,13 @@
 }
 .cont-center-cart p {
   font-size: 1rem;
+  font-weight: 500;
 }
 .cont-center-cart a {
   font-size: 1rem;
+  font-weight: 500;
   text-decoration: none;
-  color: red;
+  color: var(--gelap);
 }
 .marketing-area {
   border-radius: 1rem;
@@ -78,8 +85,9 @@
 }
 .cart-marketing-area a {
   font-size: 1rem;
+  font-weight: 500;
   text-decoration: none;
-  color: red;
+  color: var(--gelap);
 }
 .map_container-kontak {
   width: 100%;
@@ -93,4 +101,106 @@
   min-height: 100%;
   width: 100%;
   box-shadow: 2px 2px 5px rgba(229, 77, 77, 0.3);
+}
+@media (min-width: 1301px) and (max-width: 1400px) {
+  .main-cont-kontak {
+    padding-inline: 8rem;
+    padding-block: 2rem;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .main-cont-kontak {
+    padding-inline: 5rem;
+    padding-block: 2rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main-cont-kontak {
+    padding-inline: 3rem;
+    padding-block: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cont-main-des-kontak {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+  .main-cont-kontak {
+    flex-direction: column;
+    padding-inline: 10rem;
+    padding-block: 2rem;
+  }
+  .center-contact {
+    /* flex-direction: column; */
+  }
+  .marketing-area h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .cart-marketing-area {
+    display: flex;
+  }
+  .cart-marketing-area h5 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .MA1 {
+    flex-basis: 46%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .cont-main-des-kontak {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+  .main-cont-kontak {
+    flex-direction: column;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .center-contact {
+    flex-direction: column;
+  }
+  .marketing-area h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .cart-marketing-area {
+    display: flex;
+  }
+  .cart-marketing-area h5 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .MA1 {
+    flex-basis: 46%;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .cont-main-des-kontak {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+  .main-cont-kontak {
+    flex-direction: column;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .center-contact {
+    flex-direction: column;
+  }
+  .marketing-area h2 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .cart-marketing-area {
+    display: flex;
+  }
+  .cart-marketing-area h5 {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .MA1 {
+    flex-basis: 46%;
+  }
 }

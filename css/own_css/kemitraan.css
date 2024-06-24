@@ -1,5 +1,10 @@
+:root {
+  --merah: #e00d0d;
+  --onHover: #962525;
+  --gelap: #222831;
+}
 .des_kemitraan {
-  padding-inline: 30rem;
+  padding-inline: 25rem;
   padding-block: 10rem;
 }
 .des_kemitraan h2 {
@@ -7,7 +12,7 @@
   font-size: 2rem;
 }
 .des_kemitraan p {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 .middle_kemitraan {
@@ -33,7 +38,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding-inline: 4rem;
-  background-color: red;
+  background-color: var(--merah);
 }
 .title_mid_kemitraan h2 {
   font-weight: 700;
@@ -41,7 +46,7 @@
   color: white;
 }
 .title_mid_kemitraan p {
-  font-weight: 200;
+  font-weight: 500;
   font-size: 1.2rem;
   color: white;
 }
@@ -70,5 +75,185 @@
 }
 .des_cart_keuntungan p {
   font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+}
+/* 
+----------------------------
+responsive berita home page
+----------------------------
+*/
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+  .des_kemitraan {
+    padding-inline: 10rem;
+    padding-block: 4rem;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .des_kemitraan {
+    padding-inline: 10rem;
+    padding-block: 4rem;
+  }
+  .img_middle_kemitraan img {
+    height: 8rem;
+    width: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .des_kemitraan {
+    padding-inline: 3rem;
+    padding-block: 4rem;
+  }
+
+  .img_middle_kemitraan {
+    padding-block: 2rem;
+  }
+  .img_middle_kemitraan {
+    align-items: center;
+  }
+  .img_middle_kemitraan img {
+    height: 6rem;
+    width: auto;
+  }
+  .title_mid_kemitraan {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+  .title_mid_kemitraan h2 {
+    font-size: 1.5rem;
+  }
+  .title_mid_kemitraan p {
+    font-size: 1rem;
+  }
+  .cont_keuntungan_mitra {
+    padding-inline: 0rem;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .cont_cart_keuntungan {
+    /* flex-direction: column; */
+    padding-inline: 1.5rem;
+    /* text-align: center; */
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .des_kemitraan {
+    padding-inline: 1.5rem;
+    padding-block: 3rem;
+  }
+  .middle_kemitraan {
+    /* flex-direction: column; */
+  }
+
+  .img_middle_kemitraan {
+    padding-block: 2rem;
+  }
+  .img_middle_kemitraan {
+    align-items: center;
+  }
+  .img_middle_kemitraan img {
+    height: 6rem;
+    width: auto;
+  }
+  .title_mid_kemitraan {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+  .title_mid_kemitraan h2 {
+    font-size: 1.5rem;
+  }
+  .title_mid_kemitraan p {
+    font-size: 1rem;
+  }
+  .cont_keuntungan_mitra {
+    padding-inline: 0rem;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .cont_cart_keuntungan {
+    /* flex-direction: column; */
+    padding-inline: 1.5rem;
+    /* text-align: center; */
+    gap: 1rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .des_kemitraan {
+    padding-inline: 1.5rem;
+    padding-block: 3rem;
+  }
+  .middle_kemitraan {
+    flex-direction: column;
+  }
+
+  .img_middle_kemitraan {
+    padding-block: 2rem;
+  }
+
+  .img_middle_kemitraan img {
+    height: 6rem;
+    width: auto;
+  }
+  .title_mid_kemitraan {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+  .title_mid_kemitraan h2 {
+    font-size: 1.5rem;
+  }
+  .title_mid_kemitraan p {
+    font-size: 1rem;
+  }
+  .cont_keuntungan_mitra {
+    padding-inline: 0rem;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .cont_cart_keuntungan {
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .des_kemitraan {
+    padding-inline: 1rem;
+    padding-block: 3rem;
+  }
+  .middle_kemitraan {
+    flex-direction: column;
+  }
+
+  .img_middle_kemitraan {
+    padding-block: 2rem;
+  }
+
+  .img_middle_kemitraan img {
+    height: 6rem;
+    width: auto;
+  }
+  .title_mid_kemitraan {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+  .title_mid_kemitraan h2 {
+    font-size: 1.5rem;
+  }
+  .title_mid_kemitraan p {
+    font-size: 1rem;
+  }
+  .cont_keuntungan_mitra {
+    padding-inline: 0rem;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .cont_cart_keuntungan {
+    flex-direction: column;
+    padding-inline: 1rem;
+    text-align: center;
+    gap: 1rem;
+  }
 }
