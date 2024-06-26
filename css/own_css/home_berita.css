@@ -161,6 +161,9 @@ main berita
 }
 .main-berita-kiri {
   flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .main-berita-kanan {
   flex-basis: 30%;
