@@ -89,6 +89,7 @@ end sparpart middle parallax
   width: 15rem;
   height: auto;
   margin-bottom: 1rem;
+  border-radius: 15px;
 }
 .des-cart-service h2 {
   font-size: 1.3rem;
