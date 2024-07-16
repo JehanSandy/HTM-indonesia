@@ -102,3 +102,156 @@
 .des_berita_new a:hover {
   color: brown;
 }
+/* 
+----------------------------
+responsive berita home page
+----------------------------
+*/
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .cont-berita {
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  .nav_berita {
+    flex-basis: 30%;
+    border-radius: 1rem;
+  }
+  .redaksi_berita {
+    flex-basis: 70%;
+  }
+  .des_berita_new h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+  }
+  .des_berita_new a {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    text-decoration: none;
+    color: red;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .cont-berita {
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  .nav_berita {
+    flex-basis: 30%;
+    border-radius: 1rem;
+  }
+  .redaksi_berita {
+    flex-basis: 70%;
+  }
+  .des_berita_new h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+  }
+  .des_berita_new a {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    text-decoration: none;
+    color: red;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cont-berita {
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  .nav_berita {
+    flex-basis: 30%;
+    border-radius: 1rem;
+  }
+  .redaksi_berita {
+    flex-basis: 70%;
+  }
+  .des_berita_new h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+  }
+  .des_berita_new a {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    text-decoration: none;
+    color: red;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cont-berita {
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  .cont-des-berita {
+    flex-direction: column;
+  }
+  .cap_detail_berita {
+    background-color: rgb(231, 230, 230);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cap_detail_berita h3 {
+    font-size: 1rem;
+  }
+  .cap_detail_berita p {
+    margin-bottom: 0rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .cont-berita {
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  .cont-des-berita {
+    flex-direction: column;
+  }
+  .cap_detail_berita {
+    background-color: rgb(231, 230, 230);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cap_detail_berita h3 {
+    font-size: 1rem;
+  }
+  .cap_detail_berita p {
+    margin-bottom: 0rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .cont-berita {
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+  }
+  .cont-des-berita {
+    flex-direction: column;
+  }
+  .cap_detail_berita {
+    background-color: rgb(231, 230, 230);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    padding-inline: 0.5rem;
+    padding-block: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cap_detail_berita h3 {
+    font-size: 1rem;
+  }
+  .cap_detail_berita p {
+    margin-bottom: 0rem;
+  }
+}
