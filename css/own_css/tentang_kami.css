@@ -1,3 +1,8 @@
+:root {
+  --merah: #e00d0d;
+  --onHover: #962525;
+  --gelap: #222831;
+}
 .container_visi {
   padding-inline: 20rem;
   padding-block: 5rem;
@@ -32,7 +37,15 @@
   align-items: center;
   justify-content: center;
   padding-inline: 20rem;
-  padding-block: 3rem;
+  padding-block: 10rem;
+}
+.riset_des {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
 }
 .riset_pict h2 {
   position: relative;
