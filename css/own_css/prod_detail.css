@@ -106,74 +106,8 @@ spesifikasi produk
 }
 
 /* 
--------------------
-fitur detail produk
--------------------
-*/
-.cont_fiturs {
-  display: flex;
-  background-color: #f0f0f0;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 3rem;
-  padding-block: 3rem;
-  gap: 2rem;
-}
-.fiturs-kanan {
-  flex-basis: 40%;
-}
-.cont-fitur-kanan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.cont-fitur-kanan img {
-  width: 15rem;
-  height: auto;
-}
-.cont-fitur-kanan h3 {
-  font-weight: 700;
-  margin-bottom: 0rem;
-}
-
-.fiturs-kiri {
-  flex-basis: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-.fiturs-kiri-2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-.cont-item-fitur {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cont-item-fitur img {
-  width: 8rem;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.cont-item-fitur h4 {
-  margin-bottom: 0rem;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-/* 
 --------------
-fitur baru
+fitur produk
 --------------
 */
 .body_fitur {
@@ -207,20 +141,37 @@ fitur baru
 .swiper-slide p {
   font-size: 1em;
 }
-
-/* @media (max-width: 768px) {
-  .swiper-container {
-    width: 90%;
-    height: 350px;
-  }
+/* 
+--------------
+test container
+--------------
+*/
+.cart_fitur_produk {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /* overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 5px rgba(53, 52, 52, 0.1); */
 }
-@media (max-width: 480px) {
-  .swiper-container {
-    width: 100%;
-    height: 300px;
-  }
-} */
-
+.cart_fitur_produk img {
+  width: 100%;
+  height: auto;
+}
+.des_fitur_produk {
+  text-align: center;
+  padding-inline: 1rem;
+}
+.des_fitur_produk h3 {
+  margin-bottom: 0.1rem;
+  /* background-color: #e00d0d; */
+}
+.des_fitur_produk p {
+  /* background-color: aqua; */
+  margin-top: 0.5rem;
+}
 @media (min-width: 1301px) and (max-width: 1400px) {
   .main-detail-produk {
     padding-inline: 0rem;
