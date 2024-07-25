@@ -117,6 +117,7 @@ fitur produk
   align-items: center;
   padding-block: 8rem;
   margin: 0;
+  overflow: hidden;
 }
 .swiper-container {
   width: 80%;
