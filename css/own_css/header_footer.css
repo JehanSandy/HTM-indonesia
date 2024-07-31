@@ -18,8 +18,8 @@ header / navbar css
   width: auto;
   height: 8rem;
 }
-.container-logo h2 {
-  font-weight: 700;
+.container-logo h1 {
+  font-weight: 900;
 }
 /* 
 -----------
@@ -151,10 +151,10 @@ footer css
     height: 6rem;
   }
   .container-logo h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* background-color: blue; */
     padding: 0rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
   }
   /* 
