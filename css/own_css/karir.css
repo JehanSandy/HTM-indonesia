@@ -27,7 +27,7 @@
   font-weight: 400;
   font-size: 1.2rem;
 }
-.btn_karir button {
+.btn_karir a {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;
@@ -38,8 +38,9 @@
   border-radius: 45px;
   transition: all 0.3s;
   border: none;
+  text-decoration: none;
 }
-.btn_karir button:hover {
+.btn_karir a:hover {
   background-color: var(--onHover);
 }
 .img_karir {
